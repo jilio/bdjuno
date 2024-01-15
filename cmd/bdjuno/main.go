@@ -15,6 +15,7 @@ import (
 
 	"cosmossdk.io/simapp"
 
+	galacticaapp "github.com/Galactica-corp/galactica/app"
 	"github.com/forbole/bdjuno/v4/database"
 	"github.com/forbole/bdjuno/v4/modules"
 )
@@ -56,6 +57,7 @@ func main() {
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
 		simapp.ModuleBasics,
+		galacticaapp.ModuleBasics,
 	}
 }
 
